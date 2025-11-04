@@ -4,7 +4,7 @@ Auto-generated from all feature plans. Last updated: 2025-11-03
 
 ## Active Technologies
 
-- Python 3.14 (compatible with Python 3.8+) + Jupyter Notebook, IPython 9.6.0, ipywidgets 8.x, ipykernel 7.0.1 (001-interactive-modules)
+- Python 3.12.x (compatible with Python 3.8+) + Jupyter Notebook, IPython 9.6.0, ipywidgets 8.x, ipykernel 7.0.1 (001-interactive-modules)
 
 ## Project Structure
 
@@ -20,11 +20,11 @@ cd src [ONLY COMMANDS FOR ACTIVE TECHNOLOGIES][ONLY COMMANDS FOR ACTIVE TECHNOLO
 
 ## Code Style
 
-Python 3.14 (compatible with Python 3.8+): Follow standard conventions
+Python 3.12.x (compatible with Python 3.8+): Follow standard conventions
 
 ## Recent Changes
 
-- 001-interactive-modules: Added Python 3.14 (compatible with Python 3.8+) + Jupyter Notebook, IPython 9.6.0, ipywidgets 8.x, ipykernel 7.0.1
+- 001-interactive-modules: Added Python 3.12.x (compatible with Python 3.8+) + Jupyter Notebook, IPython 9.6.0, ipywidgets 8.x, ipykernel 7.0.1
 
 <!-- MANUAL ADDITIONS START -->
 <!-- MANUAL ADDITIONS END -->

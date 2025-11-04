@@ -24,7 +24,7 @@ Before testing, ensure:
 
 2. **Repository Cloned**:
    ```bash
-   cd /Users/fax/Downloads/rhoton-ready/aica-pica
+   cd /path/to/aica-pica
    git checkout 001-interactive-modules
    ```
 

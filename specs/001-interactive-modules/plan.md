@@ -11,7 +11,7 @@ Complete the implementation of Modules 3-10 in the AICA/PICA Mastery Sprint Jupy
 
 ## Technical Context
 
-**Language/Version**: Python 3.14 (compatible with Python 3.8+)
+**Language/Version**: Python 3.12.x (compatible with Python 3.8+)
 **Primary Dependencies**: Jupyter Notebook, IPython 9.6.0, ipywidgets 8.x, ipykernel 7.0.1
 **Storage**: Local filesystem - JSON files for anatomical content (data/), JSON file for progress persistence (progress_data.json in repo root)
 **Testing**: Manual user journey testing following Constitution's User Journey Test requirement (representative learner completes full pathway)

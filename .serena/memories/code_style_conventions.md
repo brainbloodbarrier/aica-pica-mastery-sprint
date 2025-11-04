@@ -2,7 +2,7 @@
 
 ## Python Style
 - **Standard**: Follow Python standard conventions (PEP 8)
-- **Compatibility**: Python 3.8+ (tested with Python 3.14)
+- **Compatibility**: Python 3.8+ (tested with Python 3.12.x)
 - **Linting**: Use `ruff check .` for code quality
 
 ## Jupyter Notebook Conventions

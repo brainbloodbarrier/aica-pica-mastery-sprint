@@ -1,5 +1,5 @@
 # AICA-PICA Mastery Sprint - Python Dependencies
-# Tested on macOS Ventura with Python 3.14 (compatible with 3.8+)
+# Tested on macOS Ventura with Python 3.12.x (compatible with 3.8+)
 
 # Core Jupyter environment
 jupyter>=1.0.0
