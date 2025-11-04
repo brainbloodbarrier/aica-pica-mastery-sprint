@@ -1,0 +1,81 @@
+# Module 6 - All 10 Questions (Code Cells)
+
+# Cell 1
+display(create_mcq(
+    "Q1: Which artery originates from the basilar artery, and which originates from the vertebral artery?",
+    ["Both AICA and PICA originate from the basilar artery", "AICA from basilar artery; PICA from vertebral artery", "AICA from vertebral artery; PICA from basilar artery", "Both AICA and PICA originate from the vertebral artery"],
+    "AICA from basilar artery; PICA from vertebral artery",
+    "AICA arises from the basilar artery (typically from the lower to middle third), while PICA arises from the vertebral artery (averaging 8.6mm above the foramen magnum but highly variable). This fundamental difference determines surgical approach selection and affects collateral circulation patterns. Source: AICA_content.json Slide 2, PICA_content.json Slide 8"
+))
+
+# Cell 2
+display(create_mcq(
+    "Q2: How many segments comprise AICA compared to PICA?",
+    ["AICA: 3 segments; PICA: 5 segments", "AICA: 4 segments; PICA: 5 segments", "AICA: 5 segments; PICA: 4 segments", "AICA: 4 segments; PICA: 4 segments"],
+    "AICA: 4 segments; PICA: 5 segments",
+    "AICA has 4 segments (anterior pontine, lateral pontine, flocculopeduncular, cortical) while PICA has 5 segments (anterior medullary, lateral medullary, tonsillomedullary, telovelotonsillar, cortical). PICA's more complex segmentation reflects its more tortuous and variable course, making it the most complex cerebellar artery. Source: AICA_content.json Slide 3, PICA_content.json Slide 2"
+))
+
+# Cell 3
+display(create_mcq(
+    "Q3: Which cerebellar peduncle does AICA supply, and which does PICA supply?",
+    ["AICA: Superior peduncle; PICA: Inferior peduncle", "AICA: Middle peduncle; PICA: Inferior peduncle", "AICA: Inferior peduncle; PICA: Middle peduncle", "Both supply the middle cerebellar peduncle"],
+    "AICA: Middle peduncle; PICA: Inferior peduncle",
+    "AICA supplies the middle cerebellar peduncle and adjacent lateral pons, while PICA supplies the inferior cerebellar peduncle and adjacent lateral medulla. This explains why ataxia in AICA occlusion results from middle peduncle damage, while ataxia in Wallenberg syndrome (PICA occlusion) results from inferior peduncle damage. The superior cerebellar peduncle is supplied by SCA. Source: AICA_content.json Slide 5, PICA_content.json Slide 11"
+))
+
+# Cell 4
+display(create_mcq(
+    "Q4: Compare the cerebellar surface territories of AICA and PICA:",
+    ["AICA: Suboccipital surface; PICA: Petrosal surface", "AICA: Petrosal surface; PICA: Suboccipital surface", "Both supply primarily the petrosal surface", "Both supply primarily the suboccipital surface"],
+    "AICA: Petrosal surface; PICA: Suboccipital surface",
+    "AICA primarily supplies the petrosal (anteroinferior) cerebellar surface, while PICA supplies the suboccipital (posteroinferior) cerebellar surface. These complementary distributions ensure complete cerebellar coverage. The petrosal surface faces anteriorly/superiorly, while the suboccipital surface faces posteriorly/inferiorly. Source: AICA_content.json Slide 14, PICA_content.json Slide 14"
+))
+
+# Cell 5
+display(create_mcq(
+    "Q5: Which cranial nerve groups are intimately related to AICA vs PICA?",
+    ["AICA: CN III, IV, V; PICA: CN VII, VIII", "AICA: CN VI, VII, VIII; PICA: CN IX, X, XI, XII", "AICA: CN IX, X, XI; PICA: CN VI, VII, VIII", "Both arteries relate primarily to CN VII and VIII"],
+    "AICA: CN VI, VII, VIII; PICA: CN IX, X, XI, XII",
+    "AICA courses near CN VI (abducens), CN VII (facial), and CN VIII (vestibulocochlear) in the cerebellopontine angle and internal auditory canal. PICA courses among the lower cranial nerves: CN IX (glossopharyngeal), CN X (vagus), CN XI (accessory), and CN XII (hypoglossal) around the medulla. This difference is critical for surgical approaches and explains different cranial nerve deficits in their occlusion syndromes. Source: AICA_content.json Slides 4-5, PICA_content.json Slide 19"
+))
+
+# Cell 6
+display(create_mcq(
+    "Q6: What is the key clinical feature that discriminates AICA occlusion from PICA occlusion?",
+    ["Vertigo (present in AICA, absent in PICA)", "Ataxia (present in PICA, absent in AICA)", "Hearing loss (present in AICA, absent in PICA)", "Horner syndrome (present in PICA, absent in AICA)"],
+    "Hearing loss (present in AICA, absent in PICA)",
+    "Hearing loss is the key discriminator. AICA occlusion causes hearing loss due to involvement of the labyrinthine artery supplying the inner ear, while PICA occlusion (Wallenberg syndrome) does not cause hearing loss. Both syndromes feature vertigo, ataxia, and Horner syndrome, but only AICA occlusion includes hearing loss. This single feature allows clinical differentiation of lateral pontine from lateral medullary syndrome. Source: AICA_content.json Slide 15, PICA_content.json inferred"
+))
+
+# Cell 7
+display(create_mcq(
+    "Q7: Compare the characteristic loops formed by AICA and PICA:",
+    ["AICA: Caudal and cranial loops; PICA: Meatal loop", "AICA: Meatal loop at IAC; PICA: Caudal and cranial loops around tonsil", "Both form meatal loops near the internal auditory canal", "Neither artery forms characteristic loops"],
+    "AICA: Meatal loop at IAC; PICA: Caudal and cranial loops around tonsil",
+    "AICA forms a meatal loop directed toward or into the internal auditory canal (reaching the porus or entering the canal in ~50% of cases). PICA forms caudal (infratonsillar) and cranial (supratonsillar) loops as it courses around the cerebellar tonsil. These loops are critical surgical landmarks: the meatal loop must be identified before IAC drilling, while the cranial loop defines the telovelotonsillar approach to the fourth ventricle. Source: AICA_content.json Slide 8, PICA_content.json Slides 5-6, 17"
+))
+
+# Cell 8
+display(create_mcq(
+    "Q8: Which artery is considered more variable in its course and distribution?",
+    ["AICA is more variable than PICA", "PICA is more variable than AICA", "Both have equal variability", "Neither shows significant variability"],
+    "PICA is more variable than AICA",
+    "PICA is the most variable cerebellar artery in course, origin level, and area of supply. It can originate from 14mm below to 26mm above the foramen magnum, may be absent in 16% of hemispheres, and its territory can vary from a small tonsillar area to the entire suboccipital surface. AICA shows moderate variability (72% single, 26% duplicate origin) but is more consistent than PICA. This extreme PICA variability requires careful preoperative imaging assessment. Source: AICA_content.json Slide 2, PICA_content.json Slides 1, 8, 14, 18"
+))
+
+# Cell 9
+display(create_mcq(
+    "Q9: Compare the primary surgical approaches used to access AICA vs PICA:",
+    ["AICA: Midline suboccipital; PICA: Retrosigmoid", "AICA: Retrosigmoid (CPA); PICA: Midline suboccipital or far-lateral", "Both are accessed primarily via retrosigmoid approach", "AICA: Translabyrinthine; PICA: Retrosigmoid"],
+    "AICA: Retrosigmoid (CPA); PICA: Midline suboccipital or far-lateral",
+    "AICA is most commonly exposed via the retrosigmoid (lateral suboccipital) approach to the cerebellopontine angle, with translabyrinthine approach for IAC pathology. PICA is accessed via midline suboccipital approach for fourth ventricle surgery (telovelotonsillar corridor) or far-lateral/extreme lateral approach for foramen magnum and vertebral artery pathology. Approach selection depends on pathology location and which artery is at risk. Source: AICA_content.json Slide 17, PICA_content.json Slide 20"
+))
+
+# Cell 10
+display(create_mcq(
+    "Q10: A patient has sudden vertigo, ipsilateral facial weakness, hearing loss, and ataxia. The lesion most likely affects:",
+    ["PICA territory (lateral medulla)", "AICA territory (lateral pons)", "Superior cerebellar artery territory", "Basilar artery perforators only"],
+    "AICA territory (lateral pons)",
+    "This constellation indicates AICA territory infarction (lateral pontine syndrome). The key features are hearing loss (labyrinthine artery involvement) and facial weakness (CN VII nucleus in pons). Wallenberg syndrome (PICA/lateral medulla) would have dysphagia and contralateral body sensory loss but NO hearing loss and typically no significant facial weakness. Hearing loss is the critical discriminator. Both cause vertigo and ipsilateral ataxia, but the peduncular source differs (middle vs inferior). Source: AICA_content.json Slide 15, comparative synthesis"
+))
