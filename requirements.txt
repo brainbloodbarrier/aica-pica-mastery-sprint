@@ -1,0 +1,18 @@
+# AICA-PICA Mastery Sprint - Python Dependencies
+# Tested on macOS Ventura with Python 3.14 (compatible with 3.8+)
+
+# Core Jupyter environment
+jupyter>=1.0.0
+notebook>=7.0.0
+jupyterlab>=4.0.0
+
+# Interactive widgets (REQUIRED for MCQ questions)
+ipywidgets>=8.0.0,<9.0.0
+
+# Python kernel
+IPython==9.6.0
+ipykernel==7.0.1
+
+# Standard library (included with Python, listed for documentation)
+# json - JSON parsing for content files
+# re - Regular expressions for parsing
