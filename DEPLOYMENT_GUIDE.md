@@ -27,7 +27,7 @@
 
 1. **Open the notebook**:
    ```bash
-   cd /Users/fax/Downloads/rhoton-ready/aica-pica
+   cd /path/to/aica-pica
    jupyter notebook AICA_PICA_Mastery_Sprint.ipynb
    ```
 

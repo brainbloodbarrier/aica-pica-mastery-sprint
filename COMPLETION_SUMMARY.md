@@ -110,11 +110,11 @@ The AICA/PICA Mastery Sprint Jupyter notebook has been successfully completed wi
 
 ## Source Materials
 
-- **Main Notebook**: `/Users/fax/Downloads/rhoton-ready/aica-pica/AICA_PICA_Mastery_Sprint.ipynb`
-- **Question Source**: `/Users/fax/Downloads/rhoton-ready/aica-pica/module_9_10_additions.py`
+- **Main Notebook**: `/path/to/aica-pica/AICA_PICA_Mastery_Sprint.ipynb`
+- **Question Source**: `/path/to/aica-pica/module_9_10_additions.py`
 - **Content Files**:
-  - `/Users/fax/Downloads/rhoton-ready/aica-pica/data/AICA_content.json`
-  - `/Users/fax/Downloads/rhoton-ready/aica-pica/data/PICA_content.json`
+  - `/path/to/aica-pica/data/AICA_content.json`
+  - `/path/to/aica-pica/data/PICA_content.json`
 
 ---
 

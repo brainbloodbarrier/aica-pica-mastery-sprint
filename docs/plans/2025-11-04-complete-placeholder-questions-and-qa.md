@@ -15,14 +15,14 @@
 ### Task 1: Audit Existing 41 Generated Questions
 
 **Files:**
-- Read: `/Users/fax/Downloads/rhoton-ready/aica-pica/AICA_PICA_Mastery_Sprint.ipynb`
+- Read: `/path/to/aica-pica/AICA_PICA_Mastery_Sprint.ipynb`
 - Read: `/tmp/module_4_questions.txt` (11 questions)
 - Read: `/tmp/module_5_questions.txt` (7 questions)
 - Read: `/tmp/module_7_questions.txt` (14 questions)
 - Read: `/tmp/module_8_vignettes.txt` (12 vignettes, 9 used)
-- Read: `/Users/fax/Downloads/rhoton-ready/aica-pica/data/AICA_content.json`
-- Read: `/Users/fax/Downloads/rhoton-ready/aica-pica/data/PICA_content.json`
-- Create: `/Users/fax/Downloads/rhoton-ready/aica-pica/docs/qa_reports/audit_41_questions.md`
+- Read: `/path/to/aica-pica/data/AICA_content.json`
+- Read: `/path/to/aica-pica/data/PICA_content.json`
+- Create: `/path/to/aica-pica/docs/qa_reports/audit_41_questions.md`
 
 **Step 1: Extract all 41 generated questions into structured format**
 
@@ -68,10 +68,10 @@ Expected output: `Parsed: M4=11, M5=7, M7=14, M8=12`
 import json
 
 # Load source data
-with open('/Users/fax/Downloads/rhoton-ready/aica-pica/data/AICA_content.json', 'r') as f:
+with open('/path/to/aica-pica/data/AICA_content.json', 'r') as f:
     aica_data = json.load(f)
 
-with open('/Users/fax/Downloads/rhoton-ready/aica-pica/data/PICA_content.json', 'r') as f:
+with open('/path/to/aica-pica/data/PICA_content.json', 'r') as f:
     pica_data = json.load(f)
 
 def verify_question_sources(question_text, explanation):
@@ -232,7 +232,7 @@ def generate_audit_report(audit_results, m7_accuracy, concept_map):
 report_text = generate_audit_report(audit_results, m7_accuracy, concept_map)
 
 # Save report
-with open('/Users/fax/Downloads/rhoton-ready/aica-pica/docs/qa_reports/audit_41_questions.md', 'w') as f:
+with open('/path/to/aica-pica/docs/qa_reports/audit_41_questions.md', 'w') as f:
     f.write(report_text)
 
 print("✅ Audit report saved")
@@ -257,8 +257,8 @@ git commit -m "docs: audit report for 41 generated questions
 ### Task 2: Analyze Remaining 59 Placeholders by Module
 
 **Files:**
-- Read: `/Users/fax/Downloads/rhoton-ready/aica-pica/AICA_PICA_Mastery_Sprint.ipynb`
-- Create: `/Users/fax/Downloads/rhoton-ready/aica-pica/docs/qa_reports/placeholder_analysis.md`
+- Read: `/path/to/aica-pica/AICA_PICA_Mastery_Sprint.ipynb`
+- Create: `/path/to/aica-pica/docs/qa_reports/placeholder_analysis.md`
 
 **Step 1: Extract placeholder context from notebook**
 
@@ -266,7 +266,7 @@ git commit -m "docs: audit report for 41 generated questions
 import json
 
 # Load notebook
-with open('/Users/fax/Downloads/rhoton-ready/aica-pica/AICA_PICA_Mastery_Sprint.ipynb', 'r') as f:
+with open('/path/to/aica-pica/AICA_PICA_Mastery_Sprint.ipynb', 'r') as f:
     nb = json.load(f)
 
 # Find all placeholders with surrounding context
@@ -435,7 +435,7 @@ for module, details in MODULE_OBJECTIVES.items():
     analysis_text += "\n---\n\n"
 
 # Save analysis
-with open('/Users/fax/Downloads/rhoton-ready/aica-pica/docs/qa_reports/placeholder_analysis.md', 'w') as f:
+with open('/path/to/aica-pica/docs/qa_reports/placeholder_analysis.md', 'w') as f:
     f.write(analysis_text)
 
 print("✅ Placeholder analysis saved")
@@ -460,14 +460,14 @@ git commit -m "docs: comprehensive analysis of 59 placeholder questions
 ### Task 3: Generate Module 6 Questions (10 questions - AICA vs PICA Comparison)
 
 **Files:**
-- Read: `/Users/fax/Downloads/rhoton-ready/aica-pica/data/AICA_content.json`
-- Read: `/Users/fax/Downloads/rhoton-ready/aica-pica/data/PICA_content.json`
-- Read: `/Users/fax/Downloads/rhoton-ready/aica-pica/module_6_questions.txt`
+- Read: `/path/to/aica-pica/data/AICA_content.json`
+- Read: `/path/to/aica-pica/data/PICA_content.json`
+- Read: `/path/to/aica-pica/module_6_questions.txt`
 - Create: `/tmp/module_6_final_questions.txt`
 
 **Step 1: Review existing Module 6 draft**
 
-Run: `cat /Users/fax/Downloads/rhoton-ready/aica-pica/module_6_questions.txt | head -100`
+Run: `cat /path/to/aica-pica/module_6_questions.txt | head -100`
 
 Expected: See 10 comparative questions already drafted
 
@@ -475,7 +475,7 @@ Expected: See 10 comparative questions already drafted
 
 ```python
 # Load existing M6 questions
-with open('/Users/fax/Downloads/rhoton-ready/aica-pica/module_6_questions.txt', 'r') as f:
+with open('/path/to/aica-pica/module_6_questions.txt', 'r') as f:
     m6_content = f.read()
 
 # Extract all 10 questions
@@ -495,7 +495,7 @@ Expected: 10 questions, all with valid dual citations (AICA + PICA slides)
 **Step 3: Copy validated questions to final location**
 
 ```bash
-cp /Users/fax/Downloads/rhoton-ready/aica-pica/module_6_questions.txt /tmp/module_6_final_questions.txt
+cp /path/to/aica-pica/module_6_questions.txt /tmp/module_6_final_questions.txt
 echo "✅ Module 6 questions validated and ready for integration"
 ```
 
@@ -504,8 +504,8 @@ echo "✅ Module 6 questions validated and ready for integration"
 ### Task 4: Generate Module 7 Remaining Questions (5 questions - Q2-Q6 Quantitative)
 
 **Files:**
-- Read: `/Users/fax/Downloads/rhoton-ready/aica-pica/data/AICA_content.json`
-- Read: `/Users/fax/Downloads/rhoton-ready/aica-pica/data/PICA_content.json`
+- Read: `/path/to/aica-pica/data/AICA_content.json`
+- Read: `/path/to/aica-pica/data/PICA_content.json`
 - Read: `/tmp/module_7_questions.txt` (existing 14 questions, Q7-Q20)
 - Create: `/tmp/module_7_questions_q2_q6.txt`
 
@@ -515,10 +515,10 @@ echo "✅ Module 6 questions validated and ready for integration"
 import json
 
 # Load source data
-with open('/Users/fax/Downloads/rhoton-ready/aica-pica/data/AICA_content.json', 'r') as f:
+with open('/path/to/aica-pica/data/AICA_content.json', 'r') as f:
     aica_data = json.load(f)
 
-with open('/Users/fax/Downloads/rhoton-ready/aica-pica/data/PICA_content.json', 'r') as f:
+with open('/path/to/aica-pica/data/PICA_content.json', 'r') as f:
     pica_data = json.load(f)
 
 # Extract ALL quantitative data from AICA slides
@@ -672,8 +672,8 @@ echo "Module 7 requires 100% quantitative accuracy for board exam preparation"
 ### Task 5: Generate Module 8 Remaining Questions (3 questions - Q10-Q12 Surgical Vignettes)
 
 **Files:**
-- Read: `/Users/fax/Downloads/rhoton-ready/aica-pica/data/AICA_content.json` (Slides 15-17: Syndromes, Collaterals, Approaches)
-- Read: `/Users/fax/Downloads/rhoton-ready/aica-pica/data/PICA_content.json` (Slides 19-20: Cranial nerves, Approaches)
+- Read: `/path/to/aica-pica/data/AICA_content.json` (Slides 15-17: Syndromes, Collaterals, Approaches)
+- Read: `/path/to/aica-pica/data/PICA_content.json` (Slides 19-20: Cranial nerves, Approaches)
 - Read: `/tmp/module_8_vignettes.txt` (existing 12 vignettes, used 9)
 - Create: `/tmp/module_8_vignettes_q10_q12.txt`
 
@@ -809,9 +809,9 @@ echo "⚠️ Module 8 Q10-Q12 flagged for manual expert creation"
 ### Task 6: Generate Module 9 Questions (33 questions - Comprehensive Assessment)
 
 **Files:**
-- Read: `/Users/fax/Downloads/rhoton-ready/aica-pica/data/AICA_content.json` (all 17 slides)
-- Read: `/Users/fax/Downloads/rhoton-ready/aica-pica/data/PICA_content.json` (all 20 slides)
-- Read: `/Users/fax/Downloads/rhoton-ready/aica-pica/module_9_10_additions.py` (existing patterns)
+- Read: `/path/to/aica-pica/data/AICA_content.json` (all 17 slides)
+- Read: `/path/to/aica-pica/data/PICA_content.json` (all 20 slides)
+- Read: `/path/to/aica-pica/module_9_10_additions.py` (existing patterns)
 - Create: `/tmp/module_9_comprehensive_33q.txt`
 
 **Distribution requirement**: M1:3, M2:5, M3:4, M4:5, M5:4, M6:4, M7:4, M8:4
@@ -1008,9 +1008,9 @@ Expected: All modules match target distribution
 ### Task 7: Generate Module 10 Questions (8 questions - Mastery Certification)
 
 **Files:**
-- Read: `/Users/fax/Downloads/rhoton-ready/aica-pica/data/AICA_content.json` (Slides 14-17: Advanced topics)
-- Read: `/Users/fax/Downloads/rhoton-ready/aica-pica/data/PICA_content.json` (Slides 16-20: Complex anatomy)
-- Read: `/Users/fax/Downloads/rhoton-ready/aica-pica/module_9_10_additions.py`
+- Read: `/path/to/aica-pica/data/AICA_content.json` (Slides 14-17: Advanced topics)
+- Read: `/path/to/aica-pica/data/PICA_content.json` (Slides 16-20: Complex anatomy)
+- Read: `/path/to/aica-pica/module_9_10_additions.py`
 - Create: `/tmp/module_10_mastery_8q.txt`
 
 **Step 1: Define mastery-level question criteria**
@@ -1156,7 +1156,7 @@ print("✅ Module 10 (8 mastery questions) generated and saved")
 - Read: `/tmp/module_8_vignettes_q10_q12.txt` (3 questions)
 - Read: `/tmp/module_9_comprehensive_33q.txt` (33 questions)
 - Read: `/tmp/module_10_mastery_8q.txt` (8 questions)
-- Modify: `/Users/fax/Downloads/rhoton-ready/aica-pica/AICA_PICA_Mastery_Sprint.ipynb`
+- Modify: `/path/to/aica-pica/AICA_PICA_Mastery_Sprint.ipynb`
 
 **Step 1: Create integration script**
 
@@ -1226,7 +1226,7 @@ question_files = {
 }
 
 replaced = replace_placeholders_in_notebook(
-    '/Users/fax/Downloads/rhoton-ready/aica-pica/AICA_PICA_Mastery_Sprint.ipynb',
+    '/path/to/aica-pica/AICA_PICA_Mastery_Sprint.ipynb',
     question_files
 )
 
@@ -1239,10 +1239,10 @@ Expected output: `✅ Integration complete: 59 placeholders replaced`
 
 ```bash
 # Count total questions in notebook
-total_questions=$(grep -c "create_mcq" /Users/fax/Downloads/rhoton-ready/aica-pica/AICA_PICA_Mastery_Sprint.ipynb)
+total_questions=$(grep -c "create_mcq" /path/to/aica-pica/AICA_PICA_Mastery_Sprint.ipynb)
 
 # Count placeholders remaining
-placeholders=$(grep -c "\[Content\]\|\[Question" /Users/fax/Downloads/rhoton-ready/aica-pica/AICA_PICA_Mastery_Sprint.ipynb)
+placeholders=$(grep -c "\[Content\]\|\[Question" /path/to/aica-pica/AICA_PICA_Mastery_Sprint.ipynb)
 
 echo "Total questions: $total_questions"
 echo "Placeholders remaining: $placeholders"
@@ -1260,7 +1260,7 @@ Expected: 131 questions, 0 placeholders
 
 ```bash
 # Convert notebook to Python script and check syntax
-jupyter nbconvert --to script /Users/fax/Downloads/rhoton-ready/aica-pica/AICA_PICA_Mastery_Sprint.ipynb --output /tmp/notebook_test.py
+jupyter nbconvert --to script /path/to/aica-pica/AICA_PICA_Mastery_Sprint.ipynb --output /tmp/notebook_test.py
 
 # Run Python syntax check
 python3 -m py_compile /tmp/notebook_test.py
@@ -1273,7 +1273,7 @@ Expected: No syntax errors
 **Step 4: Commit integration**
 
 ```bash
-git add /Users/fax/Downloads/rhoton-ready/aica-pica/AICA_PICA_Mastery_Sprint.ipynb
+git add /path/to/aica-pica/AICA_PICA_Mastery_Sprint.ipynb
 git commit -m "feat: integrate 59 placeholder questions with real content
 
 Modules completed:
@@ -1293,8 +1293,8 @@ All questions sourced from AICA_content.json and PICA_content.json
 ### Task 9: Final Quality Assurance - All 131 Questions
 
 **Files:**
-- Read: `/Users/fax/Downloads/rhoton-ready/aica-pica/AICA_PICA_Mastery_Sprint.ipynb`
-- Create: `/Users/fax/Downloads/rhoton-ready/aica-pica/docs/qa_reports/final_qa_131_questions.md`
+- Read: `/path/to/aica-pica/AICA_PICA_Mastery_Sprint.ipynb`
+- Create: `/path/to/aica-pica/docs/qa_reports/final_qa_131_questions.md`
 
 **Step 1: Run comprehensive QA checks**
 
@@ -1368,7 +1368,7 @@ def qa_all_questions(notebook_path, aica_data, pica_data):
 
 # Run QA
 qa_results = qa_all_questions(
-    '/Users/fax/Downloads/rhoton-ready/aica-pica/AICA_PICA_Mastery_Sprint.ipynb',
+    '/path/to/aica-pica/AICA_PICA_Mastery_Sprint.ipynb',
     aica_data,
     pica_data
 )
@@ -1462,7 +1462,7 @@ def generate_final_qa_report(qa_results):
 final_report = generate_final_qa_report(qa_results)
 
 # Save report
-with open('/Users/fax/Downloads/rhoton-ready/aica-pica/docs/qa_reports/final_qa_131_questions.md', 'w') as f:
+with open('/path/to/aica-pica/docs/qa_reports/final_qa_131_questions.md', 'w') as f:
     f.write(final_report)
 
 print("✅ Final QA report generated")
@@ -1485,7 +1485,7 @@ git commit -m "docs: final QA report for all 131 questions
 ### Task 10: Create Spaced Repetition Analysis Document
 
 **Files:**
-- Create: `/Users/fax/Downloads/rhoton-ready/aica-pica/docs/spaced_repetition_analysis.md`
+- Create: `/path/to/aica-pica/docs/spaced_repetition_analysis.md`
 
 **Step 1: Analyze question spacing and retention strategy**
 
@@ -1552,7 +1552,7 @@ def analyze_spaced_repetition(notebook_path):
     return spacing_analysis
 
 # Run analysis
-spacing_analysis = analyze_spaced_repetition('/Users/fax/Downloads/rhoton-ready/aica-pica/AICA_PICA_Mastery_Sprint.ipynb')
+spacing_analysis = analyze_spaced_repetition('/path/to/aica-pica/AICA_PICA_Mastery_Sprint.ipynb')
 
 print("Spaced Repetition Analysis:")
 for concept, data in spacing_analysis.items():
@@ -1645,7 +1645,7 @@ Based on spacing research (Cepeda et al., 2006; Karpicke & Roediger, 2008):
 spaced_rep_doc = generate_spaced_repetition_doc(spacing_analysis)
 
 # Save document
-with open('/Users/fax/Downloads/rhoton-ready/aica-pica/docs/spaced_repetition_analysis.md', 'w') as f:
+with open('/path/to/aica-pica/docs/spaced_repetition_analysis.md', 'w') as f:
     f.write(spaced_rep_doc)
 
 print("✅ Spaced repetition analysis document created")
@@ -1670,7 +1670,7 @@ git commit -m "docs: spaced repetition analysis for retention optimization
 ### Task 11: Create Implementation Summary
 
 **Files:**
-- Create: `/Users/fax/Downloads/rhoton-ready/aica-pica/IMPLEMENTATION_COMPLETE.md`
+- Create: `/path/to/aica-pica/IMPLEMENTATION_COMPLETE.md`
 
 ```markdown
 # AICA-PICA Learning System: Complete Implementation Summary
@@ -1859,7 +1859,7 @@ git commit -m "docs: spaced repetition analysis for retention optimization
 ## Files Modified
 
 ```
-/Users/fax/Downloads/rhoton-ready/aica-pica/
+/path/to/aica-pica/
 ├── AICA_PICA_Mastery_Sprint.ipynb (176 cells, 131 questions)
 ├── docs/
 │   ├── qa_reports/
@@ -1905,7 +1905,7 @@ The AICA-PICA Mastery Learning System is **COMPLETE** with all 131 questions imp
 Save this summary:
 
 ```bash
-cat > /Users/fax/Downloads/rhoton-ready/aica-pica/IMPLEMENTATION_COMPLETE.md << 'EOF'
+cat > /path/to/aica-pica/IMPLEMENTATION_COMPLETE.md << 'EOF'
 [paste above content]
 EOF
 

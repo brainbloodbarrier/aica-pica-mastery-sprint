@@ -188,7 +188,7 @@ The notebook is production-ready and can be used for:
 
 1. **Open in Jupyter**:
    ```bash
-   cd /Users/fax/Downloads/rhoton-ready/aica-pica
+   cd /path/to/aica-pica
    jupyter notebook AICA_PICA_Mastery_Sprint.ipynb
    ```
 

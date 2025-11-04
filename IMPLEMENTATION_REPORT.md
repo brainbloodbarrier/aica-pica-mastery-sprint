@@ -108,7 +108,7 @@ Vignettes cover:
 Run the included `fix_notebook.py` script (in development):
 
 ```bash
-cd /Users/fax/Downloads/rhoton-ready/aica-pica
+cd /path/to/aica-pica
 python3 fix_notebook.py
 ```
 
@@ -168,15 +168,15 @@ After integration, verify:
 All questions generated from verified sources:
 
 **Primary Sources**:
-- `/Users/fax/Downloads/rhoton-ready/aica-pica/data/AICA_content.json` (17 slides)
-- `/Users/fax/Downloads/rhoton-ready/aica-pica/data/PICA_content.json` (20 slides)
+- `/path/to/aica-pica/data/AICA_content.json` (17 slides)
+- `/path/to/aica-pica/data/PICA_content.json` (20 slides)
 
 **Templates**:
-- `/Users/fax/Downloads/rhoton-ready/aica-pica/specs/002-content-specialist/data-model.md`
-- `/Users/fax/Downloads/rhoton-ready/aica-pica/specs/002-content-specialist/research.md`
+- `/path/to/aica-pica/specs/002-content-specialist/data-model.md`
+- `/path/to/aica-pica/specs/002-content-specialist/research.md`
 
 **Reference**:
-- `/Users/fax/Downloads/rhoton-ready/aica-pica/module_9_10_additions.py` (Module 9/10 patterns)
+- `/path/to/aica-pica/module_9_10_additions.py` (Module 9/10 patterns)
 
 All quantitative values (percentages, measurements, averages) have been verified against JSON slide content.
 
@@ -214,8 +214,8 @@ d
 2. `/tmp/module_5_questions.txt` - 7 PICA branch questions
 3. `/tmp/module_7_questions.txt` - 14 quantitative questions
 4. `/tmp/module_8_vignettes.txt` - 12 clinical vignettes (use 9)
-5. `/Users/fax/Downloads/rhoton-ready/aica-pica/fix_notebook.py` - Automation script
-6. `/Users/fax/Downloads/rhoton-ready/aica-pica/IMPLEMENTATION_REPORT.md` - This file
+5. `/path/to/aica-pica/fix_notebook.py` - Automation script
+6. `/path/to/aica-pica/IMPLEMENTATION_REPORT.md` - This file
 
 ---
 

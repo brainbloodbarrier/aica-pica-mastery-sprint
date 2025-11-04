@@ -81,8 +81,8 @@ All questions have been validated for:
 - ✓ Integration and progressive complexity
 
 ## File Information
-- **Notebook Location**: /Users/fax/Downloads/rhoton-ready/aica-pica/AICA_PICA_Mastery_Sprint.ipynb
-- **Source File**: /Users/fax/Downloads/rhoton-ready/aica-pica/module_9_10_additions.py
+- **Notebook Location**: /path/to/aica-pica/AICA_PICA_Mastery_Sprint.ipynb
+- **Source File**: /path/to/aica-pica/module_9_10_additions.py
 - **Total File Size**: ~450KB (Jupyter notebook JSON format)
 
 ## Ready for Testing
