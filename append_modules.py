@@ -367,13 +367,38 @@ print(f"  Added: {new_cell_count - original_cell_count}")
 # Save updated notebook
 backup_path = 'AICA_PICA_Mastery_Sprint_BACKUP.ipynb'
 print(f"\nCreating backup: {backup_path}")
-with open(backup_path, 'w') as f:
-    json.dump(json.load(open('AICA_PICA_Mastery_Sprint.ipynb')), f, indent=2)
+
+try:
+    # Load source notebook
+    with open('AICA_PICA_Mastery_Sprint.ipynb', 'r', encoding='utf-8') as src:
+        notebook_data = json.load(src)
+    
+    # Write backup
+    with open(backup_path, 'w', encoding='utf-8') as dst:
+        json.dump(notebook_data, dst, indent=2)
+    
+    print(f"✅ Backup created successfully: {backup_path}")
+    
+except FileNotFoundError as e:
+    print(f"❌ ERROR: Source notebook not found: {e}")
+    sys.exit(1)
+except json.JSONDecodeError as e:
+    print(f"❌ ERROR: Invalid JSON in source notebook: {e}")
+    sys.exit(1)
+except IOError as e:
+    print(f"❌ ERROR: Could not write backup file: {e}")
+    sys.exit(1)
 
 output_path = 'AICA_PICA_Mastery_Sprint.ipynb'
 print(f"Saving updated notebook: {output_path}")
-with open(output_path, 'w') as f:
-    json.dump(notebook, f, indent=2)
+
+try:
+    with open(output_path, 'w', encoding='utf-8') as f:
+        json.dump(notebook, f, indent=2)
+    print(f"✅ Notebook saved successfully: {output_path}")
+except IOError as e:
+    print(f"❌ ERROR: Could not save notebook: {e}")
+    sys.exit(1)
 
 print(f"\n✅ SUCCESS! Modules 9 and 10 added to notebook.")
 print(f"✅ Total questions now: 130 (includes all modules)")

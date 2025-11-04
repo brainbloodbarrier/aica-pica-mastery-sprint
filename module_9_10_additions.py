@@ -6,6 +6,7 @@ However, Module 9 is a comprehensive review pulling from existing modules, so it
 """
 
 import json
+import sys
 
 def create_code_cell(source_lines):
     """Helper to create a code cell."""
@@ -761,7 +762,11 @@ output = {
     "final_cells": 3
 }
 
-with open('/Users/fax/Downloads/rhoton-ready/aica-pica/new_modules_cells.json', 'w') as f:
-    json.dump(output, f, indent=2)
-
-print(f"\nSaved cells to new_modules_cells.json")
+output_path = 'new_modules_cells.json'
+try:
+    with open(output_path, 'w', encoding='utf-8') as f:
+        json.dump(output, f, indent=2)
+    print(f"\n✅ Saved cells to {output_path}")
+except IOError as e:
+    print(f"\n❌ ERROR: Could not save cells to {output_path}: {e}")
+    sys.exit(1)
