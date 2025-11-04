@@ -30,6 +30,7 @@ wheels/
 # IDEs
 .vscode/
 .idea/
+.cursor/
 *.swp
 *.swo
 *~
@@ -49,6 +50,10 @@ images/rhoton_extracted/
 *.tmp
 *.temp
 *.log
+
+# Progress tracking (user-specific)
+progress_data.json
+progress_data.*.json
 
 # macOS
 .DS_Store

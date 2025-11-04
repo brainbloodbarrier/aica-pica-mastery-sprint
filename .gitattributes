@@ -1,0 +1,22 @@
+# Normalize line endings across platforms
+* text=auto
+
+# Jupyter notebooks: always LF
+*.ipynb text eol=lf
+
+# JSON data: always LF
+*.json text eol=lf
+
+# Markdown: always LF
+*.md text eol=lf
+
+# Python: always LF
+*.py text eol=lf
+
+# Shell scripts: always LF
+*.sh text eol=lf
+
+# Configuration files: always LF
+.gitignore text eol=lf
+.gitattributes text eol=lf
+
