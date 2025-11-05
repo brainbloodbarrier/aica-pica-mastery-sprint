@@ -1,0 +1,50 @@
+# Ruff configuration for aica-pica project
+# https://docs.astral.sh/ruff/configuration/
+
+# Target Python 3.8+ compatibility
+target-version = "py38"
+
+# Line length
+line-length = 100
+
+# Exclude directories and files
+exclude = [
+    ".git",
+    ".venv",
+    "venv",
+    "__pycache__",
+    "*.ipynb",  # Jupyter notebooks (ruff has issues parsing them)
+    "scripts/deprecated",  # Deprecated helper scripts
+    ".specify",
+    ".serena",
+    ".claude",
+]
+
+[lint]
+# Enable specific rule categories
+select = [
+    "E",   # pycodestyle errors
+    "F",   # pyflakes
+    "W",   # pycodestyle warnings
+    "I",   # isort (import sorting)
+    "N",   # pep8-naming
+    "UP",  # pyupgrade
+    "B",   # flake8-bugbear
+    "C4",  # flake8-comprehensions
+]
+
+# Ignore specific rules
+ignore = [
+    "E501",  # Line too long (handled by formatter)
+]
+
+[lint.per-file-ignores]
+# Allow unused imports in __init__.py files
+"__init__.py" = ["F401"]
+
+[format]
+# Use double quotes for strings
+quote-style = "double"
+
+# Use spaces for indentation
+indent-style = "space"
