@@ -13,6 +13,9 @@ ipywidgets>=8.0.0,<9.0.0
 IPython==9.6.0
 ipykernel==7.0.1
 
+# Code quality and linting
+ruff>=0.1.0
+
 # Standard library (included with Python, listed for documentation)
 # json - JSON parsing for content files
 # re - Regular expressions for parsing

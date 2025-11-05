@@ -1,17 +1,29 @@
 #!/usr/bin/env python3
 """
-Fix AICA_PICA_Mastery_Sprint.ipynb by reorganizing questions and adding missing ones.
+[DEPRECATED] Fix AICA_PICA_Mastery_Sprint.ipynb by reorganizing questions and adding missing ones.
 
-Current issues:
+DEPRECATION NOTICE:
+This script was used for initial notebook construction and is now deprecated.
+The main notebook has been manually updated and no longer requires this automation.
+This file is kept for historical reference only.
+
+Original purpose:
 - Questions are labeled correctly but placed in wrong module sections
 - Missing questions: Module 4 (11), Module 5 (7), Module 7 (14), Module 8 (9)
 - Total: Need to add 41 new questions + reorganize existing 90 questions
 
-This script will:
+Original workflow:
 1. Extract all correctly-labeled questions
 2. Generate missing questions from JSON sources
 3. Reorganize notebook so questions appear in correct module sections
 4. Save fixed notebook as AICA_PICA_Mastery_Sprint_FIXED.ipynb
+
+ISSUES:
+- Hardcoded absolute paths (non-portable)
+- Dependencies on /tmp/ files that no longer exist
+- Module 7 question generation never completed (TODO at line 186)
+
+DO NOT USE THIS SCRIPT. Edit the notebook directly instead.
 """
 
 import json

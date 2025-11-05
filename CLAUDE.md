@@ -9,14 +9,34 @@ Auto-generated from all feature plans. Last updated: 2025-11-03
 ## Project Structure
 
 ```text
-backend/
-frontend/
-tests/
+aica-pica/
+├── AICA_PICA_Mastery_Sprint.ipynb      # Main deliverable
+├── AICA_PICA_Mastery_Sprint_BACKUP.ipynb
+├── data/                                # Source content (JSON)
+│   ├── AICA_content.json
+│   ├── PICA_content.json
+│   └── image_resources.json
+├── specs/                               # Feature specifications
+│   ├── 001-interactive-modules/
+│   └── 002-content-specialist/
+├── docs/                                # Documentation suite
+├── *.py                                 # Helper scripts
+└── README.md
 ```
 
 ## Commands
 
-cd src [ONLY COMMANDS FOR ACTIVE TECHNOLOGIES][ONLY COMMANDS FOR ACTIVE TECHNOLOGIES] pytest [ONLY COMMANDS FOR ACTIVE TECHNOLOGIES][ONLY COMMANDS FOR ACTIVE TECHNOLOGIES] ruff check .
+```bash
+# Launch main notebook
+jupyter notebook AICA_PICA_Mastery_Sprint.ipynb
+
+# Code quality check
+ruff check .
+
+# Validate JSON data
+python3 -m json.tool data/AICA_content.json > /dev/null
+python3 -m json.tool data/PICA_content.json > /dev/null
+```
 
 ## Code Style
 
