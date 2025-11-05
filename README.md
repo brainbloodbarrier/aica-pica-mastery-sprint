@@ -111,9 +111,67 @@ Structured JSON files containing comprehensive anatomical content:
 
 ### Prerequisites
 
+- **Python 3.8+** (tested on Python 3.12.x)
+- **Jupyter Notebook** with ipywidgets support
+- **Git** for cloning the repository
+
+### Installation
+
+#### Option 1: Using Virtual Environment (Recommended)
+
+Using a virtual environment isolates project dependencies from your system Python:
+
 ```bash
-# Install Python dependencies
-pip install jupyter ipywidgets ipython
+# Navigate to project directory
+cd aica-pica
+
+# Create virtual environment
+python3 -m venv venv
+
+# Activate virtual environment
+# On macOS/Linux:
+source venv/bin/activate
+# On Windows:
+# venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Verify installation
+jupyter --version
+python -c "import ipywidgets; print(f'ipywidgets {ipywidgets.__version__}')"
+```
+
+**Note**: Always activate the virtual environment before launching Jupyter:
+```bash
+source venv/bin/activate  # macOS/Linux
+jupyter notebook AICA_PICA_Mastery_Sprint.ipynb
+```
+
+To deactivate when done:
+```bash
+deactivate
+```
+
+#### Option 2: System-Wide Installation
+
+If you prefer system-wide installation (not recommended on macOS with externally-managed Python):
+
+```bash
+pip3 install -r requirements.txt
+```
+
+#### Troubleshooting
+
+**macOS "externally-managed-environment" error**:
+- Use virtual environment (Option 1) instead
+- Or use `--break-system-packages` flag (not recommended)
+
+**ipywidgets not displaying**:
+```bash
+jupyter nbextension enable --py widgetsnbextension
+# For JupyterLab:
+jupyter labextension install @jupyter-widgets/jupyterlab-manager
 ```
 
 ### Quick Start
