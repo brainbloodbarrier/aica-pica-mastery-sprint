@@ -45,6 +45,11 @@ const initialGameState: GameState = {
     correctAnswers: 0,
     lastActive: new Date().toISOString(),
   },
+  neurons: 0, // Virtual currency
+  hearts: 5, // Start with 5 hearts
+  lastHeartRefill: new Date().toISOString(),
+  dailyGoal: 10, // Default goal: 10 questions/day
+  todayProgress: 0,
 }
 
 const GameContext = createContext<GameContextType | undefined>(undefined)
