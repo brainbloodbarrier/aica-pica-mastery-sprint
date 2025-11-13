@@ -2,7 +2,9 @@
 
 export const XP_PER_CORRECT_ANSWER = 10;
 export const XP_PER_MODULE_COMPLETE = 50;
+export const XP_PER_MODULE_COMPLETION = 50; // Alias for compatibility
 export const XP_PER_ACHIEVEMENT = 100;
+export const XP_PER_STREAK_DAY = 5; // XP for each day of streak
 
 export const LEVELS = [
   { level: 1, xpRequired: 0, title: 'Medical Student' },

@@ -8,6 +8,8 @@ import { ProgressOverview } from '@/components/dashboard/ProgressOverview'
 import { ModuleGrid } from '@/components/dashboard/ModuleGrid'
 import { Button } from '@/components/ui/Button'
 import { ArrowLeft, Trophy } from 'lucide-react'
+import { HeartsDisplayCompact } from '@/components/gamification/HeartsDisplay'
+import { NeuronsDisplayCompact } from '@/components/gamification/NeuronsDisplay'
 
 export default function DashboardPage() {
   const router = useRouter()
@@ -37,14 +39,20 @@ export default function DashboardPage() {
               Voltar
             </Button>
 
-            {gameState.badges.length > 0 && (
-              <div className="flex items-center gap-2 bg-yellow-100 px-4 py-2 rounded-lg">
-                <Trophy className="text-yellow-600" size={20} />
-                <span className="text-sm font-bold text-yellow-800">
-                  {gameState.badges.length} {gameState.badges.length === 1 ? 'Badge' : 'Badges'}
-                </span>
-              </div>
-            )}
+            <div className="flex items-center gap-3">
+              {/* Hearts and Neurons Display */}
+              <HeartsDisplayCompact />
+              <NeuronsDisplayCompact />
+
+              {gameState.badges.length > 0 && (
+                <div className="flex items-center gap-2 bg-yellow-100 px-4 py-2 rounded-lg">
+                  <Trophy className="text-yellow-600" size={20} />
+                  <span className="text-sm font-bold text-yellow-800">
+                    {gameState.badges.length} {gameState.badges.length === 1 ? 'Badge' : 'Badges'}
+                  </span>
+                </div>
+              )}
+            </div>
           </div>
 
           <h1 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 mb-2">
