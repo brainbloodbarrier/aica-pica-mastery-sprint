@@ -4,7 +4,12 @@ import {
   MODULE_2_QUESTIONS,
   MODULE_3_QUESTIONS,
   MODULE_4_QUESTIONS,
-  MODULE_5_QUESTIONS
+  MODULE_5_QUESTIONS,
+  MODULE_6_QUESTIONS,
+  MODULE_7_QUESTIONS,
+  MODULE_8_QUESTIONS,
+  MODULE_9_QUESTIONS,
+  MODULE_10_QUESTIONS
 } from './questions'
 
 export const MODULES: Module[] = [
@@ -76,7 +81,7 @@ export const MODULES: Module[] = [
     title: 'AICA vs PICA Comparison',
     description: 'Comparação anatômica e clínica entre AICA e PICA',
     topic: 'Comparative Anatomy',
-    questions: [],
+    questions: MODULE_6_QUESTIONS,
     passPercentage: 80,
     duration: '45-60 min',
     xpReward: 100,
@@ -88,7 +93,7 @@ export const MODULES: Module[] = [
     title: 'Quantitative Mastery',
     description: 'Domínio de dados quantitativos e variações anatômicas',
     topic: 'Quantitative Data',
-    questions: [],
+    questions: MODULE_7_QUESTIONS,
     passPercentage: 85,
     duration: '45-60 min',
     badge: 'Quantitative Master',
@@ -101,7 +106,7 @@ export const MODULES: Module[] = [
     title: 'Surgical Applications',
     description: 'Aplicações cirúrgicas e tomada de decisão intraoperatória',
     topic: 'Clinical Integration',
-    questions: [],
+    questions: MODULE_8_QUESTIONS,
     passPercentage: 80,
     duration: '60-90 min',
     badge: 'Surgical Applications Master',
@@ -114,7 +119,7 @@ export const MODULES: Module[] = [
     title: 'Comprehensive Assessment',
     description: 'Avaliação abrangente de todos os conceitos',
     topic: 'Integration',
-    questions: [],
+    questions: MODULE_9_QUESTIONS,
     passPercentage: 85,
     duration: '60 min',
     xpReward: 200,
@@ -126,7 +131,7 @@ export const MODULES: Module[] = [
     title: 'Mastery Certification',
     description: 'Certificação final de maestria AICA/PICA',
     topic: 'Final Assessment',
-    questions: [],
+    questions: MODULE_10_QUESTIONS,
     passPercentage: 90,
     duration: '30 min',
     badge: 'Comprehensive AICA/PICA Mastery',
