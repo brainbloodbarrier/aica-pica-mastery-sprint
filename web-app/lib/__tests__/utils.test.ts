@@ -35,9 +35,9 @@ describe('calculateLevel', () => {
   });
 
   it('should calculate progress between levels', () => {
-    const result = calculateLevel(350); // Level 3, halfway to level 4
+    const result = calculateLevel(350); // Level 3, 40% to level 4 (100/250)
     expect(result.level).toBe(3);
-    expect(result.progress).toBeCloseTo(50, 1);
+    expect(result.progress).toBeCloseTo(40, 1);
   });
 });
 
