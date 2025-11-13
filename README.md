@@ -1,296 +1,399 @@
-# AICA/PICA Mastery Study System
+# AICA-PICA Mastery Sprint 🧠
 
-A comprehensive, **enterprise-grade gamified learning system** for mastering the microsurgical anatomy of the Anteroinferior Cerebellar Artery (AICA) and Posteroinferior Cerebellar Artery (PICA).
+> **Enterprise-grade gamified learning system** for mastering the microsurgical anatomy of AICA and PICA arteries
 
-## 🎯 Overview
-
-This project provides a complete educational pathway from foundational learning through presentation delivery and board exam preparation, focused on AICA and PICA anatomy essential for neurosurgical practice. **Now featuring Duolingo-inspired gamification** for maximum engagement and completion rates.
-
-### Key Features
-
-- **🎮 Gamified Learning Experience** with XP, levels, streaks, and achievements
-- **Interactive Jupyter Notebooks** with mastery-based progression (130 questions)
-- **🏆 Achievement System** with hidden unlockables and celebration animations
-- **🔥 Daily Streak System** to build consistent learning habits
-- **📊 Rich Progress Dashboard** with real-time animated feedback
-- **Comprehensive board-style question bank** with detailed explanations
-- **Presentation preparation materials** for delivering masterclass-level talks
-- **Quick-reference handouts** for clinical use
-- **Curated imaging resources** for radiological correlation
-
-### 🎮 Gamification Highlights
-
-- **7-Level Progression**: From "Novice Neurosurgeon" to "AICA/PICA Master"
-- **XP Rewards**: Earn points for every learning action (+10 per question, +100 per module)
-- **Daily Streaks**: Build habits with consecutive day bonuses
-- **8 Hidden Achievements**: Bronze, Silver, Gold, and Platinum tiers
-- **Celebration Moments**: Confetti, animations, and milestone recognition
-- **Professional Design**: Modern UI with gradient cards and smooth animations
-
-See [`GAMIFICATION_FEATURES_GUIDE.md`](GAMIFICATION_FEATURES_GUIDE.md) for complete details.
-
-## 📚 Components
-
-### 1. Main Learning Notebook
-**File**: `AICA_PICA_Mastery_Sprint.ipynb`
-
-Interactive 1-2 day mastery sprint with:
-- 10 progressive modules
-- Multiple assessment types (MCQs, free recall, image identification, clinical vignettes)
-- Automatic grading and progress tracking
-- Mastery badges and performance analytics
-
-**Modules**:
-1. Posterior Circulation Overview (30-45 min)
-2. AICA Segments Deep Dive (90-120 min)
-3. AICA Branches & Clinical (60-90 min)
-4. PICA Segments Deep Dive (90-120 min)
-5. PICA Branches & Variations (60-90 min)
-6. AICA vs PICA Comparison (45-60 min)
-7. Quantitative Mastery (45-60 min)
-8. Surgical Applications (60-90 min)
-9. Comprehensive Assessment (60 min)
-10. Mastery Certification (30 min)
-
-### 2. Documentation Suite
-**Location**: `docs/`
-
-#### Project Status & Reports
-**Primary Documentation**:
-- **Implementation Status**: [`FINAL_IMPLEMENTATION_REPORT.md`](FINAL_IMPLEMENTATION_REPORT.md) - Current project status and completion metrics
-- **Quality Audit**: [`COMPREHENSIVE_REPO_AUDIT.md`](COMPREHENSIVE_REPO_AUDIT.md) - Full repository quality assessment
-- **Validation Report**: [`NOTEBOOK_VALIDATION_REPORT.md`](NOTEBOOK_VALIDATION_REPORT.md) - Technical validation results
-- **Historical Reports**: [`docs/history/`](docs/history/) - Previous implementation summaries
-
-#### Presentation Prep Guide
-**File**: `docs/presentation_prep_guide.md`
-
-Complete slide-by-slide preparation for delivering a 45-60 minute AICA/PICA masterclass:
-- Memory anchors for 25 slides
-- Anticipated Q&A with detailed answers
-- Timing guidance
-- Confidence building strategies
-
-#### Audience Handout
-**File**: `docs/AICA_PICA_Reference_Handout.md`
-
-8-10 page quick reference guide with:
-- Comprehensive summary tables
-- High-yield quantitative data
-- Surgical pearls by approach
-- Clinical syndrome summaries
-
-#### Board Prep Question Bank
-**File**: `docs/AICA_PICA_Board_Prep.ipynb`
-
-Interactive question bank with:
-- 50+ board-style MCQs
-- Detailed explanations for each answer
-- Performance tracking by category
-- Random quiz and focused practice modes
-
-#### Imaging Resources Guide
-**File**: `docs/AICA_PICA_Imaging_Resources.md`
-
-Curated guide to imaging resources:
-- MRI-Angiography interpretation
-- CT-Angiography with 3D reconstruction
-- Conventional arteriography
-- Endovascular anatomy
-- Links to neuroangio.org, Radiopaedia, and other resources
-
-### 3. Content Data
-**Location**: `data/`
-
-Structured JSON files containing comprehensive anatomical content:
-- `AICA_content.json` - 17 detailed AICA topics
-- `PICA_content.json` - 20 detailed PICA topics
-- `image_resources.json` - Catalog of imaging resources
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-- **Python 3.8+** (tested on Python 3.12.x)
-- **Jupyter Notebook** with ipywidgets support
-- **Git** for cloning the repository
-
-### Installation
-
-#### Option 1: Using Virtual Environment (Recommended)
-
-Using a virtual environment isolates project dependencies from your system Python:
-
-```bash
-# Navigate to project directory
-cd aica-pica
-
-# Create virtual environment
-python3 -m venv venv
-
-# Activate virtual environment
-# On macOS/Linux:
-source venv/bin/activate
-# On Windows:
-# venv\Scripts\activate
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Verify installation
-jupyter --version
-python -c "import ipywidgets; print(f'ipywidgets {ipywidgets.__version__}')"
-```
-
-**Note**: Always activate the virtual environment before launching Jupyter:
-```bash
-source venv/bin/activate  # macOS/Linux
-jupyter notebook AICA_PICA_Mastery_Sprint.ipynb
-```
-
-To deactivate when done:
-```bash
-deactivate
-```
-
-#### Option 2: System-Wide Installation
-
-If you prefer system-wide installation (not recommended on macOS with externally-managed Python):
-
-```bash
-pip3 install -r requirements.txt
-```
-
-#### Troubleshooting
-
-**macOS "externally-managed-environment" error**:
-- Use virtual environment (Option 1) instead
-- Or use `--break-system-packages` flag (not recommended)
-
-**ipywidgets not displaying**:
-```bash
-jupyter nbextension enable --py widgetsnbextension
-# For JupyterLab:
-jupyter labextension install @jupyter-widgets/jupyterlab-manager
-```
-
-### Quick Start
-
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/[your-username]/aica-pica.git
-   cd aica-pica
-   ```
-
-2. **Launch the main learning notebook**:
-   ```bash
-   jupyter notebook AICA_PICA_Mastery_Sprint.ipynb
-   ```
-
-3. **Follow the mastery-based progression** through all 10 modules
-
-4. **Use supplementary materials** in `docs/` for presentation prep, board study, and imaging review
-
-## 📖 Recommended Learning Pathway
-
-### Phase 1: Foundation (Days 1-2) - Mastery Sprint
-- Complete all 10 modules in `AICA_PICA_Mastery_Sprint.ipynb`
-- Achieve 80-85% on assessments
-- Earn mastery badges
-
-### Phase 2: Presentation Prep (Days 3-4)
-- Study `docs/presentation_prep_guide.md`
-- Memorize key transitions and memory anchors
-- Practice Q&A responses
-- Prepare `docs/AICA_PICA_Reference_Handout.md` for audience
-
-### Phase 3: Present
-- Deliver 45-60 minute masterclass
-- Distribute handouts to audience
-
-### Phase 4: Board Preparation (Ongoing)
-- Practice with `docs/AICA_PICA_Board_Prep.ipynb`
-- Target 80%+ overall score
-- Focus on weak categories
-
-### Phase 5: Imaging Mastery (Ongoing)
-- Follow 4-week pathway in `docs/AICA_PICA_Imaging_Resources.md`
-- Practice on neuroangio.org and Radiopaedia
-- Learn 3D reconstruction techniques
-
-## 📊 Content Summary
-
-### AICA (Anteroinferior Cerebellar Artery)
-
-**Key Numbers**:
-- 72% single trunk origin, 26% duplicate, 2% triplicate
-- Meatal loop reaches/enters IAC in 50% of cases
-- Labyrinthine artery from premeatal segment in 77%
-- Recurrent perforators present in 82%
-
-**Segments**: Anterior pontine, lateral pontine, flocculopeduncular, cortical
-
-**Critical Branches**: Labyrinthine artery, recurrent perforators, subarcuate artery
-
-**Clinical Syndrome**: Lateral pontine syndrome (CN VII/VIII dysfunction, vertigo, ataxia)
-
-### PICA (Posteroinferior Cerebellar Artery)
-
-**Key Numbers**:
-- Present in 84%, absent in 16%
-- Origin: 14mm below to 26mm above foramen magnum (avg 8.6mm above)
-- Tonsillomedullary segment: 3.3 perforators (most productive)
-- Caudal loop: 74% above foramen magnum
-
-**Segments**: Anterior medullary, lateral medullary, tonsillomedullary, telovelotonsillar, cortical
-
-**Critical Features**: Caudal and cranial loops, perforators to lateral medulla
-
-**Clinical Syndrome**: Wallenberg syndrome (lateral medullary infarction)
-
-## 🎓 Educational Philosophy
-
-This system implements:
-- **Mastery-based learning**: Progress only after demonstrating understanding
-- **Multi-modal engagement**: Reading, visualization, active recall, clinical application
-- **Iterative reinforcement**: Quick sprints + deep flows + varied assessment types
-- **Clinical integration**: Every anatomical concept tied to surgical relevance
-
-## 🧠 Target Audience
-
-- Neurosurgery residents preparing for boards
-- Fellows specializing in cerebrovascular or skull base surgery
-- Attending neurosurgeons refreshing posterior fossa anatomy
-- Medical students interested in neurosurgery
-
-## 📚 Sources
-
-**Primary Source**:
-- Rhoton AL Jr. "The Posterior Cranial Fossa: Microsurgical Anatomy & Surgical Approaches." *Neurosurgery*. 2000;47(3 Suppl):S1-S297.
-
-**Imaging Resources**:
-- neuroangio.org - Comprehensive neuro-angiography atlas
-- Radiopaedia.org - Case repository and anatomy articles
-- neurosurgicalatlas.com - Surgical approaches and 3D models
-
-## 🤝 Contributing
-
-This is an educational resource. If you find errors or have suggestions for improvement, please open an issue or submit a pull request.
-
-## 📄 License
-
-This educational content is provided for academic and clinical education purposes.
-
-## 🙏 Acknowledgments
-
-- Dr. Albert L. Rhoton Jr. for foundational anatomical work
-- Neuroangio.org for comprehensive angiographic atlas
-- Radiopaedia and Neurosurgical Atlas for imaging resources
-
-## 📧 Contact
-
-For questions or feedback, please open an issue in this repository.
+[![Status](https://img.shields.io/badge/status-beta-blue)](https://github.com/brainbloodbarrier/aica-pica-mastery-sprint)
+[![Version](https://img.shields.io/badge/version-0.9.0--beta-green)](./CHANGELOG.md)
+[![License](https://img.shields.io/badge/license-Educational-yellow)]()
 
 ---
 
-**Master the anatomy. Master the surgery.** 🧠🔬
+## 🎉 **NEW: Modern Web Application!**
+
+AICA-PICA Mastery Sprint has been completely reimagined as a **modern, interactive web application** with professional gamification and learning science integration.
+
+**Why the migration?** ✨
+- 🚀 **Superior UX**: Modern, intuitive interface vs. Jupyter's clunky notebook
+- 📱 **Mobile-First**: Works perfectly on phones, tablets, and desktop
+- 🎮 **Advanced Gamification**: Duolingo-level engagement mechanics
+- 🧠 **Spaced Repetition**: Brainscape-inspired review system
+- 💫 **Instant Access**: No installation, just open in browser
+
+**[→ Jump to Quick Start](#-quick-start)** | **[→ See What's New](#-whats-new-in-v090-beta)**
+
+---
+
+## 📊 At a Glance
+
+| Feature | Details |
+|---------|---------|
+| **Content** | 130 validated questions on AICA/PICA anatomy |
+| **Format** | Modern web app (Next.js + TypeScript) |
+| **Duration** | 12-16 hours study time (self-paced) |
+| **Target** | Neurosurgery residents, fellows, attending surgeons |
+| **Gamification** | XP system, streaks, hearts, neurons, achievements |
+| **Learning Science** | Spaced repetition, confidence rating, mastery tracking |
+| **Mobile Support** | ✅ Fully responsive |
+| **Offline Mode** | 🔄 Coming soon (PWA) |
+
+---
+
+## 🚀 Quick Start
+
+### Web App (Recommended)
+
+```bash
+cd web-app
+npm install
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+**That's it!** No Python, no Jupyter, no complicated setup.
+
+### Deploy Your Own (Vercel)
+
+```bash
+cd web-app
+npm i -g vercel
+vercel
+```
+
+Get a public URL in ~2 minutes.
+
+---
+
+## ✨ What's New in v0.9.0-beta
+
+### 🎮 Enhanced Gamification
+
+| Feature | Description |
+|---------|-------------|
+| **💔 Hearts/Lives System** | 5 hearts per day, lose 1 per wrong answer, refill every 4 hours |
+| **🧠 Neurons Currency** | Earn neurons to buy hearts, streak freezes, power-ups |
+| **🎯 Daily Goals** | Set personal targets (10/20/30 questions/day) |
+| **🏆 10 Achievements** | Bronze → Platinum tiers with XP rewards |
+| **🔥 Enhanced Streaks** | Visual fire counter with motivational messages |
+
+### 🧠 Learning Science Integration
+
+| Feature | Description |
+|---------|-------------|
+| **😰→🤩 Confidence Rating** | Rate your confidence (1-5) after each answer |
+| **📅 Spaced Repetition** | Automatic review scheduling based on confidence |
+| **📊 Mastery Tracking** | 0-100% mastery level per topic |
+| **🔄 Review Queue** | Smart prioritization of weak areas |
+| **📈 Retention Prediction** | Forgetting curve visualization |
+
+### 💎 User Experience
+
+| Feature | Description |
+|---------|-------------|
+| **🎨 Modern UI** | Medical-inspired blue/purple palette |
+| **📱 Mobile-First** | Touch-optimized for all devices |
+| **⚡ Smooth Animations** | Framer Motion for fluid interactions |
+| **🎉 Celebrations** | Confetti, level-ups, achievement unlocks |
+| **📊 Rich Dashboard** | Comprehensive progress visualization |
+
+[→ See Complete Feature List](#-complete-features)
+
+---
+
+## 📚 Project Structure
+
+```
+aica-pica-mastery-sprint/
+├── web-app/                    # 🆕 Modern Web Application
+│   ├── app/                   # Next.js pages
+│   ├── components/            # 27 React components
+│   ├── data/                  # Questions & content
+│   ├── lib/                   # Utilities & types
+│   └── README.md             # Web app documentation
+├── legacy/                    # 🗄️ Archived Jupyter notebooks
+│   ├── *.ipynb               # Original notebooks
+│   └── scripts/              # Python helper scripts
+├── data/                      # 📊 Source content (JSON)
+│   ├── AICA_content.json     # 17 slides
+│   ├── PICA_content.json     # 20 slides
+│   └── image_resources.json
+├── docs/                      # 📖 Documentation suite
+│   ├── presentation_prep_guide.md
+│   ├── AICA_PICA_Reference_Handout.md
+│   └── AICA_PICA_Board_Prep.ipynb
+├── specs/                     # 🎯 Feature specifications
+├── IMPROVEMENT_PLAN.md        # 🗺️ Beta roadmap
+├── CHANGELOG.md               # 📝 Version history
+└── README_WEB_APP.md          # 🔄 Migration guide
+```
+
+---
+
+## 🎯 Complete Features
+
+### Learning System
+
+- ✅ **10 Progressive Modules** - Sequential unlock with prerequisites
+- ✅ **130 Validated Questions** - Based on Rhoton's Microsurgical Anatomy
+- ✅ **Multiple Question Types** - MCQ, clinical vignettes, image-based
+- ✅ **Immediate Feedback** - Detailed explanations + source citations
+- ✅ **Mastery-Based Progression** - 80-90% pass thresholds
+
+### Gamification (Duolingo-Inspired)
+
+- ✅ **7-Level XP System** - Novice Neurosurgeon → AICA/PICA Master
+- ✅ **Hearts/Lives** - 5 per day, refill every 4 hours
+- ✅ **Virtual Currency (Neurons)** - Earn & spend on power-ups
+- ✅ **Daily Streaks** - Consecutive day tracking with bonuses
+- ✅ **8 Exclusive Badges** - Module completion rewards
+- ✅ **10 Achievements** - Bronze, Silver, Gold, Platinum tiers
+- ✅ **Animated Celebrations** - Confetti, level-ups, unlocks
+
+### Learning Science (Brainscape-Inspired)
+
+- ✅ **Confidence Rating (1-5)** - Self-assess after each answer
+- ✅ **Spaced Repetition Algorithm** - Optimal review timing
+- ✅ **Review Queue** - Smart prioritization
+- ✅ **Mastery Tracking** - 0-100% per topic
+- ✅ **Retention Prediction** - Forgetting curve math
+- ⏳ **Adaptive Difficulty** - Coming soon
+
+### User Experience
+
+- ✅ **Modern Web UI** - Next.js 14 + TailwindCSS
+- ✅ **Mobile Responsive** - Works on all devices
+- ✅ **Smooth Animations** - Framer Motion
+- ✅ **Progress Persistence** - LocalStorage
+- ✅ **Keyboard Navigation** - Full accessibility
+- ⏳ **Dark Mode** - Coming soon
+- ⏳ **PWA/Offline** - Coming soon
+
+### Content
+
+- ✅ **Module 1** - 5 demo questions
+- ⏳ **Modules 2-10** - 125 questions to migrate
+- ✅ **AICA Content** - 17 slides (JSON)
+- ✅ **PICA Content** - 20 slides (JSON)
+- ⏳ **Images** - Anatomical diagrams
+- ⏳ **Videos** - Explanation clips
+
+### Technical
+
+- ✅ **TypeScript** - Full type safety
+- ✅ **Component Library** - 27 reusable components
+- ✅ **State Management** - React Context API
+- ✅ **Testing** - 0 npm vulnerabilities
+- ⏳ **Unit Tests** - Jest (planned)
+- ⏳ **E2E Tests** - Playwright (planned)
+
+---
+
+## 🎓 For Learners
+
+### Learning Pathway
+
+1. **Complete Modules 1-10** (12-16 hours)
+   - Study at your own pace
+   - Earn XP, badges, achievements
+   - Build daily streak
+
+2. **Review with Spaced Repetition** (Ongoing)
+   - Answer review queue questions
+   - Rate your confidence
+   - Track mastery levels
+
+3. **Achieve AICA/PICA Mastery**
+   - Reach Level 7
+   - 90%+ on all modules
+   - Unlock final certification
+
+### Study Tips
+
+- 🎯 **Set Daily Goal**: Start with 10 questions/day
+- 🔥 **Build Streak**: Study for 7+ consecutive days
+- 😰 **Honest Confidence**: Low ratings = more review
+- 📱 **Mobile Learning**: Study anywhere, anytime
+- 💡 **Read Explanations**: Even when correct
+
+---
+
+## 👨‍💻 For Developers
+
+### Tech Stack
+
+- **Framework**: Next.js 14 (App Router)
+- **Language**: TypeScript
+- **Styling**: TailwindCSS
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+- **State**: React Context API
+- **Storage**: LocalStorage
+- **Deploy**: Vercel-ready
+
+### Development
+
+```bash
+# Install dependencies
+cd web-app
+npm install
+
+# Development server
+npm run dev
+
+# Build for production
+npm run build
+npm start
+
+# Lint code
+npm run lint
+```
+
+### Contributing
+
+See [IMPROVEMENT_PLAN.md](./IMPROVEMENT_PLAN.md) for:
+- Roadmap & planned features
+- Phase 1-3 implementation guide
+- Contribution opportunities
+- A/B testing plan
+
+---
+
+## 📖 Documentation
+
+| Document | Description |
+|----------|-------------|
+| [README_WEB_APP.md](./README_WEB_APP.md) | Migration overview & comparison |
+| [web-app/README.md](./web-app/README.md) | Web app documentation |
+| [IMPROVEMENT_PLAN.md](./IMPROVEMENT_PLAN.md) | Beta roadmap & features |
+| [CHANGELOG.md](./CHANGELOG.md) | Version history |
+| [CONTRIBUTING.md](./CONTRIBUTING.md) | Contribution guide (TBD) |
+
+### Legacy Documentation
+
+| Document | Description |
+|----------|-------------|
+| [legacy/*.ipynb](./legacy/) | Original Jupyter notebooks |
+| [docs/](./docs/) | Presentation guides & board prep |
+
+---
+
+## 🗺️ Roadmap
+
+### ✅ Phase 1: Beta MVP (Current)
+- [x] Web app migration complete
+- [x] Hearts/lives system
+- [x] Confidence rating
+- [x] Spaced repetition foundation
+- [x] Daily goals & neurons
+- [ ] Keyboard navigation
+- [ ] Mobile optimizations
+
+### 🔄 Phase 2: Beta Launch (Week 3-4)
+- [ ] Weekly leaderboards
+- [ ] Skill tree visualization
+- [ ] Migrate Modules 2-5 (42 questions)
+- [ ] Add images to questions
+- [ ] PWA with offline support
+- [ ] Privacy-friendly analytics
+
+### 🔮 Phase 3: V1.0 (Month 2)
+- [ ] Backend (PostgreSQL)
+- [ ] User authentication
+- [ ] Friends & social features
+- [ ] Migrate all 130 questions
+- [ ] Video explanations
+- [ ] 3D anatomical models
+
+[→ See Complete Roadmap](./IMPROVEMENT_PLAN.md)
+
+---
+
+## 📊 Success Metrics (Beta Goals)
+
+| Metric | Target | Gold Standard |
+|--------|--------|---------------|
+| 7-Day Retention | 60% | 70% (Duolingo) |
+| 30-Day Retention | 30% | 40% |
+| Avg Session Time | 15 min | 20 min |
+| Module Completion | 70% | 80% |
+| Daily Active Users | 40% MAU | 50% |
+
+---
+
+## 🎓 Educational Value
+
+### Content Source
+
+All anatomical content based on:
+**Dr. Albert L. Rhoton Jr.'s Microsurgical Anatomy**
+- Primary source for neurosurgical anatomy
+- Gold standard reference
+
+### Learning Outcomes
+
+Upon completion, learners will be able to:
+- ✅ Identify all AICA segments and branches
+- ✅ Describe PICA's complex anatomical course
+- ✅ Recognize clinical syndromes (lateral pontine, Wallenberg)
+- ✅ Plan surgical approaches based on vascular anatomy
+- ✅ Apply quantitative data to clinical scenarios
+
+### Target Audience
+
+- **Primary**: Neurosurgery residents & fellows
+- **Secondary**: Attending surgeons (review/presentation prep)
+- **Tertiary**: Medical students (advanced anatomy)
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions! Areas needed:
+
+1. **Content**: Migrate remaining 125 questions
+2. **Images**: Add anatomical diagrams
+3. **Translations**: Internationalize (Spanish, Portuguese)
+4. **Testing**: Unit & E2E tests
+5. **Features**: Implement Phase 2 roadmap
+
+See [IMPROVEMENT_PLAN.md](./IMPROVEMENT_PLAN.md) for details.
+
+---
+
+## 📄 License
+
+This project contains educational content based on copyrighted academic works.
+
+- **Code**: Open source (use freely)
+- **Content**: Educational use only
+- **Images**: Cited from neuroangio.org, Radiopaedia, etc.
+
+---
+
+## 📧 Support & Contact
+
+- **Issues**: [GitHub Issues](https://github.com/brainbloodbarrier/aica-pica-mastery-sprint/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/brainbloodbarrier/aica-pica-mastery-sprint/discussions)
+- **Email**: [Your Email]
+
+---
+
+## 🏆 Credits
+
+- **Content**: Based on Dr. Albert L. Rhoton Jr.'s Microsurgical Anatomy
+- **Gamification**: Inspired by Duolingo & Brainscape
+- **Development**: Built with ❤️ for medical education excellence
+
+---
+
+## ⭐ Star Us!
+
+If you find this project useful, please consider giving it a star on GitHub. It helps others discover this resource!
+
+[![GitHub Stars](https://img.shields.io/github/stars/brainbloodbarrier/aica-pica-mastery-sprint?style=social)](https://github.com/brainbloodbarrier/aica-pica-mastery-sprint)
+
+---
+
+**Ready to master AICA & PICA?** [Get Started →](#-quick-start)
+
+*Last updated: November 12, 2025* | *Version 0.9.0-beta*

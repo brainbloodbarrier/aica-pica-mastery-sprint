@@ -1,0 +1,334 @@
+{
+  "image_resources": {
+    "rhoton_extracted": {
+      "location": "/home/fax/Personal/dev_RhotonReady/SPRINT/images/rhoton_extracted/",
+      "count": 234,
+      "format": "jpg",
+      "source": "Rhoton's Cranial Anatomy - Posterior Fossa",
+      "quality": "high_resolution_anatomical_dissections",
+      "naming_pattern": "image-{number}.jpg",
+      "usage_notes": "These are surgical dissection photos from Rhoton's atlas. Extract relevant AICA/PICA images by cross-referencing figure numbers from JSON content files."
+    },
+    "neuroangio_org": {
+      "aica_images": [
+        {
+          "url": "http://www.neuroangio.org/wp-content/uploads/AICA/classic-vertebrobasilar-circulation.gif",
+          "description": "Classic vertebrobasilar circulation showing AICA origin",
+          "type": "schematic_diagram",
+          "suggested_slides": ["Overview", "AICA Origin"]
+        },
+        {
+          "url": "http://www.neuroangio.org/wp-content/uploads/AICA/AICA_duplicated.jpg",
+          "description": "Duplicated AICA angiography",
+          "type": "angiogram",
+          "suggested_slides": ["AICA Variations", "Bifurcation Patterns"]
+        },
+        {
+          "url": "http://www.neuroangio.org/wp-content/uploads/VB/VA_basilar_diagram_AICA_duplication.png",
+          "description": "Diagram showing AICA duplication pattern",
+          "type": "schematic_diagram",
+          "suggested_slides": ["AICA Variations"]
+        },
+        {
+          "url": "http://www.neuroangio.org/wp-content/uploads/VB/Basilar_AICA.png",
+          "description": "AICA origin from basilar artery - angiogram",
+          "type": "angiogram",
+          "suggested_slides": ["AICA Origin"]
+        },
+        {
+          "url": "https://www.neuroangio.org/wp-content/uploads/AICA/AICA-labyrinthine-artery-01.png",
+          "description": "AICA labyrinthine artery branch - angiogram",
+          "type": "angiogram",
+          "suggested_slides": ["Labyrinthine Artery", "AICA Branches"]
+        },
+        {
+          "url": "https://www.neuroangio.org/wp-content/uploads/AICA/AICA-labyrinthine-artery-02.png",
+          "description": "AICA labyrinthine artery - detailed view",
+          "type": "angiogram",
+          "suggested_slides": ["Labyrinthine Artery"]
+        },
+        {
+          "url": "https://www.neuroangio.org/wp-content/uploads/AICA/AICA-labyrinthine-artery-03.png",
+          "description": "AICA labyrinthine artery - lateral view",
+          "type": "angiogram",
+          "suggested_slides": ["Labyrinthine Artery"]
+        },
+        {
+          "url": "https://www.neuroangio.org/wp-content/uploads/AICA/AICA-labyrinthine-artery-04.png",
+          "description": "AICA labyrinthine artery - AP view",
+          "type": "angiogram",
+          "suggested_slides": ["Labyrinthine Artery"]
+        },
+        {
+          "url": "https://www.neuroangio.org/wp-content/uploads/AICA/AICA-subarcuate-artery-01.png",
+          "description": "AICA subarcuate artery branch",
+          "type": "angiogram",
+          "suggested_slides": ["Subarcuate Artery", "AICA Branches"]
+        },
+        {
+          "url": "https://www.neuroangio.org/wp-content/uploads/AICA/AICA-subarcuate-artery-02.png",
+          "description": "AICA subarcuate artery - detailed",
+          "type": "angiogram",
+          "suggested_slides": ["Subarcuate Artery"]
+        },
+        {
+          "url": "http://www.neuroangio.org/wp-content/uploads/AICA/AICA-LOOP-01.png",
+          "description": "AICA meatal loop configuration",
+          "type": "angiogram",
+          "suggested_slides": ["Meatal Loop", "AICA Course"]
+        },
+        {
+          "url": "http://www.neuroangio.org/wp-content/uploads/AICA/AICA-LOOP-02.png",
+          "description": "AICA loop variations",
+          "type": "angiogram",
+          "suggested_slides": ["Meatal Loop", "Anatomical Variations"]
+        },
+        {
+          "url": "http://www.neuroangio.org/wp-content/uploads/AP/AP-AICA-supply-01.png",
+          "description": "AICA territory and perforator supply",
+          "type": "schematic_diagram",
+          "suggested_slides": ["AICA Territory", "Perforating Arteries"]
+        }
+      ],
+      "pica_images": [
+        {
+          "url": "http://www.neuroangio.org/wp-content/uploads/VB/Vert_PICA_cervical_origin.png",
+          "description": "PICA cervical origin from vertebral artery",
+          "type": "angiogram",
+          "suggested_slides": ["PICA Origin", "Origin Variations"]
+        },
+        {
+          "url": "http://www.neuroangio.org/wp-content/uploads/PICA/PICA_C1_origin_diagram.png",
+          "description": "Diagram of C1 PICA origin",
+          "type": "schematic_diagram",
+          "suggested_slides": ["PICA Origin", "C1 Origin Pattern"]
+        },
+        {
+          "url": "http://www.neuroangio.org/wp-content/uploads/PICA/PICA_C1_origin_and_medullary_perforator.png",
+          "description": "PICA C1 origin with medullary perforators",
+          "type": "angiogram",
+          "suggested_slides": ["Perforating Arteries", "Medullary Supply"]
+        },
+        {
+          "url": "http://www.neuroangio.org/wp-content/uploads/PICA/PICA-duplication-01.png",
+          "description": "PICA duplication - first view",
+          "type": "angiogram",
+          "suggested_slides": ["PICA Variations", "Duplication Patterns"]
+        },
+        {
+          "url": "http://www.neuroangio.org/wp-content/uploads/PICA/PICA-duplication-02.png",
+          "description": "PICA duplication - second view",
+          "type": "angiogram",
+          "suggested_slides": ["PICA Variations"]
+        },
+        {
+          "url": "http://www.neuroangio.org/wp-content/uploads/PICA/PICA_C2_origin_AP.png",
+          "description": "PICA C2 origin - AP angiogram",
+          "type": "angiogram",
+          "suggested_slides": ["Origin Variations", "Extradural Origin"]
+        },
+        {
+          "url": "http://www.neuroangio.org/wp-content/uploads/PICA/PICA_C2_origin_Lateral.png",
+          "description": "PICA C2 origin - lateral angiogram",
+          "type": "angiogram",
+          "suggested_slides": ["Origin Variations", "Extradural Origin"]
+        },
+        {
+          "url": "http://www.neuroangio.org/wp-content/uploads/VB/VA_PICA_inferior_extension.png",
+          "description": "PICA inferior extension and caudal loop",
+          "type": "angiogram",
+          "suggested_slides": ["Caudal Loop", "PICA Course"]
+        },
+        {
+          "url": "http://www.neuroangio.org/wp-content/uploads/PICA/PICA_dominant_PICA_diagram.png",
+          "description": "Dominant PICA territory diagram",
+          "type": "schematic_diagram",
+          "suggested_slides": ["PICA Territory", "Hemispheric Supply"]
+        },
+        {
+          "url": "http://www.neuroangio.org/wp-content/uploads/VB/VA_azygous_PICA.jpg",
+          "description": "Azygous PICA (single midline PICA)",
+          "type": "angiogram",
+          "suggested_slides": ["PICA Variations", "Rare Variants"]
+        },
+        {
+          "url": "http://www.neuroangio.org/wp-content/uploads/PICA/Pica-bihemispheric-MRA.png",
+          "description": "Bihemispheric PICA on MRA",
+          "type": "mra",
+          "suggested_slides": ["PICA Variations", "Imaging Findings"]
+        },
+        {
+          "url": "https://www.neuroangio.org/wp-content/uploads/PICA/PICA-SCA-balance-01.png",
+          "description": "PICA-SCA balance diagram 1",
+          "type": "schematic_diagram",
+          "suggested_slides": ["Cerebellar Vascular Balance", "PICA-SCA Relationship"]
+        },
+        {
+          "url": "https://www.neuroangio.org/wp-content/uploads/PICA/PICA-SCA-balance-02.png",
+          "description": "PICA-SCA balance diagram 2",
+          "type": "schematic_diagram",
+          "suggested_slides": ["Cerebellar Vascular Balance"]
+        },
+        {
+          "url": "http://www.neuroangio.org/wp-content/uploads/VB/Vert_PICA_fenestration.png",
+          "description": "PICA fenestration variant",
+          "type": "angiogram",
+          "suggested_slides": ["PICA Variations", "Rare Anatomical Variants"]
+        }
+      ],
+      "usage_notes": "High-quality angiographic images from neuroangio.org. Best for showing vascular anatomy, variants, and radiological appearance."
+    },
+    "neurosurgical_atlas": {
+      "aica_pages": [
+        {
+          "url": "https://www.neurosurgicalatlas.com/neuroanatomy/anteroinferior-cerebellar-artery-relationships",
+          "title": "AICA Relationships",
+          "content_type": "anatomical_images",
+          "suggested_slides": ["AICA Course", "Nerve Relationships"]
+        },
+        {
+          "url": "https://www.neurosurgicalatlas.com/neuroanatomy/segments-of-the-aica",
+          "title": "Segments of AICA",
+          "content_type": "anatomical_images",
+          "suggested_slides": ["AICA Segments"]
+        },
+        {
+          "url": "https://www.neurosurgicalatlas.com/neuroanatomy/aica-relationships-in-the-right-cpa",
+          "title": "AICA in CPA - Retrosigmoid Approach",
+          "content_type": "surgical_anatomy",
+          "suggested_slides": ["Surgical Approach", "CPA Anatomy"]
+        },
+        {
+          "url": "https://www.neurosurgicalatlas.com/3d-models/posterior-circulation-arterial-anatomy",
+          "title": "Posterior Circulation 3D Model",
+          "content_type": "3d_model",
+          "suggested_slides": ["Overview", "3D Anatomy"]
+        }
+      ],
+      "pica_pages": [
+        {
+          "url": "https://www.neurosurgicalatlas.com/neuroanatomy/posterior-inferior-cerebellar-artery",
+          "title": "PICA Anatomy",
+          "content_type": "anatomical_images",
+          "suggested_slides": ["PICA Overview", "Course"]
+        },
+        {
+          "url": "https://www.neurosurgicalatlas.com/neuroanatomy/locations-of-the-PICA-segments",
+          "title": "PICA Bifurcation and Loops",
+          "content_type": "anatomical_diagrams",
+          "suggested_slides": ["PICA Loops", "Bifurcation Patterns"]
+        },
+        {
+          "url": "https://www.neurosurgicalatlas.com/neuroanatomy/bilateral-posterior-inferior-cerebellar-artery-with-an-extradural-origin",
+          "title": "PICA Extradural Origin",
+          "content_type": "anatomical_images",
+          "suggested_slides": ["Extradural Origin", "Rare Variants"]
+        },
+        {
+          "url": "https://www.neurosurgicalatlas.com/neuroanatomy/posterior-inferior-cerebellar-artery-relationships",
+          "title": "PICA Relationships",
+          "content_type": "anatomical_images",
+          "suggested_slides": ["PICA Course", "Anatomical Relationships"]
+        }
+      ],
+      "usage_notes": "Neurosurgical Atlas provides high-quality cadaveric dissection images and 3D models. Best for surgical anatomy and anatomical relationships. Requires manual download from website."
+    }
+  },
+  "recommended_image_selection": {
+    "priority_1_must_have": [
+      {
+        "slide_topic": "AICA Origin and Course",
+        "recommended_sources": ["neuroangio_org: classic-vertebrobasilar-circulation.gif", "rhoton: Figure 2.11-2.14"],
+        "image_count": 1
+      },
+      {
+        "slide_topic": "AICA Nerve Relationships",
+        "recommended_sources": ["rhoton: Figure 2.13", "neurosurgical_atlas: AICA relationships"],
+        "image_count": 1
+      },
+      {
+        "slide_topic": "AICA Meatal Loop",
+        "recommended_sources": ["neuroangio_org: AICA-LOOP-01.png", "rhoton: Figure 2.14"],
+        "image_count": 1
+      },
+      {
+        "slide_topic": "Labyrinthine Artery",
+        "recommended_sources": ["neuroangio_org: AICA-labyrinthine-artery-01.png"],
+        "image_count": 1
+      },
+      {
+        "slide_topic": "PICA Origin from Vertebral",
+        "recommended_sources": ["neuroangio_org: Vert_PICA_cervical_origin.png", "rhoton: Figure 2.19-2.20"],
+        "image_count": 1
+      },
+      {
+        "slide_topic": "PICA Course and Segments",
+        "recommended_sources": ["rhoton: Figure 2.16", "neurosurgical_atlas: PICA anatomy"],
+        "image_count": 1
+      },
+      {
+        "slide_topic": "PICA Caudal Loop",
+        "recommended_sources": ["neuroangio_org: VA_PICA_inferior_extension.png", "rhoton: Figure 2.17"],
+        "image_count": 1
+      },
+      {
+        "slide_topic": "PICA Cranial Loop (Telovelotonsillar)",
+        "recommended_sources": ["rhoton: Figure 2.16D", "rhoton: Figure 2.18"],
+        "image_count": 1
+      },
+      {
+        "slide_topic": "PICA Bifurcation",
+        "recommended_sources": ["rhoton: Figure 2.17", "rhoton: Figure 2.22"],
+        "image_count": 1
+      }
+    ],
+    "priority_2_important": [
+      {
+        "slide_topic": "AICA Variations (duplication)",
+        "recommended_sources": ["neuroangio_org: AICA_duplicated.jpg", "neuroangio_org: VA_basilar_diagram_AICA_duplication.png"],
+        "image_count": 1
+      },
+      {
+        "slide_topic": "AICA Subarcuate Artery",
+        "recommended_sources": ["neuroangio_org: AICA-subarcuate-artery-01.png"],
+        "image_count": 1
+      },
+      {
+        "slide_topic": "PICA Extradural Origin",
+        "recommended_sources": ["rhoton: Figure 2.21", "neurosurgical_atlas: bilateral-PICA-extradural"],
+        "image_count": 1
+      },
+      {
+        "slide_topic": "PICA Variations",
+        "recommended_sources": ["neuroangio_org: VA_azygous_PICA.jpg", "neuroangio_org: PICA-duplication-01.png"],
+        "image_count": 1
+      },
+      {
+        "slide_topic": "Cerebellar Vascular Balance",
+        "recommended_sources": ["neuroangio_org: PICA-SCA-balance-01.png"],
+        "image_count": 1
+      }
+    ],
+    "priority_3_optional": [
+      {
+        "slide_topic": "3D Overview",
+        "recommended_sources": ["neurosurgical_atlas: 3d-models/posterior-circulation"],
+        "image_count": 1
+      },
+      {
+        "slide_topic": "Angiographic Findings",
+        "recommended_sources": ["neuroangio_org: various angiograms"],
+        "image_count": "2-3"
+      }
+    ]
+  },
+  "image_curation_workflow": {
+    "step_1": "Review AICA_content.json and PICA_content.json for rhoton_image_refs",
+    "step_2": "Match Rhoton figure numbers to extracted images (cross-reference with markdown)",
+    "step_3": "Download priority angiography images from neuroangio.org URLs",
+    "step_4": "Visit neurosurgical_atlas pages and screenshot/download key images",
+    "step_5": "Create final_images/ directory with renamed files matching slide numbers",
+    "step_6": "Update presentation outline with actual image file paths"
+  },
+  "notes": "Total of ~20-25 curated images recommended for 20-30 slide presentation. 1-2 images per slide maximum. Prioritize Rhoton surgical dissections for anatomical detail and neuroangio.org angiograms for radiological correlation."
+}
