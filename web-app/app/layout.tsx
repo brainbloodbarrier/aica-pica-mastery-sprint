@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { GameProvider } from "@/context/GameContext";
+import { ErrorBoundary } from "@/components/ErrorBoundary";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -22,9 +23,11 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body className={`${inter.variable} font-sans antialiased bg-gradient-to-br from-blue-50 via-white to-purple-50 min-h-screen`}>
-        <GameProvider>
-          {children}
-        </GameProvider>
+        <ErrorBoundary>
+          <GameProvider>
+            {children}
+          </GameProvider>
+        </ErrorBoundary>
       </body>
     </html>
   );
