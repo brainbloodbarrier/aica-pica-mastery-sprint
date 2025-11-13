@@ -19,3 +19,7 @@ ruff>=0.1.0
 # Standard library (included with Python, listed for documentation)
 # json - JSON parsing for content files
 # re - Regular expressions for parsing
+# Testing dependencies for CI
+pytest>=7.0.0
+nbformat>=5.0.0
+nbconvert>=7.0.0
