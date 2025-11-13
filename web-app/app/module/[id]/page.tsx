@@ -10,7 +10,7 @@ import { Confetti } from '@/components/celebration/Confetti'
 import { LevelUpAnimation } from '@/components/celebration/LevelUpAnimation'
 import { Button } from '@/components/ui/Button'
 import { ArrowLeft } from 'lucide-react'
-import { SAMPLE_QUESTIONS } from '@/data/questions'
+import { MODULE_QUESTIONS } from '@/data/questions'
 import { calculateLevel } from '@/lib/utils'
 
 export default function ModulePage() {
@@ -61,18 +61,17 @@ export default function ModulePage() {
     )
   }
 
-  // For demo purposes, using sample questions for Module 1
-  // In production, you would load specific questions for each module
-  const questions = moduleId === 1 ? SAMPLE_QUESTIONS : []
+  // Load questions for this module
+  const questions = MODULE_QUESTIONS[moduleId] || []
 
   if (questions.length === 0) {
     return (
       <div className="min-h-screen flex items-center justify-center p-6">
         <div className="max-w-md text-center">
           <div className="text-6xl mb-4">📝</div>
-          <h1 className="text-2xl font-bold text-gray-800 mb-4">Em Desenvolvimento</h1>
+          <h1 className="text-2xl font-bold text-gray-800 mb-4">Módulo Indisponível</h1>
           <p className="text-gray-600 mb-6">
-            Este módulo está em desenvolvimento. Por enquanto, apenas o Módulo 1 está disponível para demonstração.
+            Este módulo não possui questões cadastradas. Por favor, tente outro módulo.
           </p>
           <Button onClick={() => router.push('/dashboard')}>
             Voltar ao Dashboard
