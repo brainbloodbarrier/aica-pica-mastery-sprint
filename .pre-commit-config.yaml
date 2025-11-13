@@ -1,0 +1,53 @@
+repos:
+  # Strip Jupyter notebook outputs
+  - repo: https://github.com/kynan/nbstripout
+    rev: 0.8.1
+    hooks:
+      - id: nbstripout
+        name: nbstripout
+        description: Strip outputs from Jupyter notebooks
+        entry: nbstripout
+        language: python
+        files: \.ipynb$
+        stages: [pre-commit]
+
+  # YAML validation
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+      - id: check-yaml
+        name: Check YAML
+      - id: check-json
+        name: Check JSON
+      - id: trailing-whitespace
+        name: Trim trailing whitespace
+      - id: end-of-file-fixer
+        name: Fix end of file
+
+  # Python linting with ruff
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.6.0
+    hooks:
+      - id: ruff
+        name: Ruff lint
+        args: [--fix, --exit-zero]
+      - id: ruff-format
+        name: Ruff format
+
+  # Markdown linting
+  - repo: https://github.com/igorshubovych/markdownlint-cli
+    rev: v0.35.0
+    hooks:
+      - id: markdownlint
+        name: Markdownlint
+        args: [--fix]
+
+ci:
+  autofix_commit_msg: |
+    chore: auto-fix code style issues with pre-commit hooks
+  autofix_prs: true
+  autoupdate_branch: ''
+  autoupdate_commit_msg: 'chore: update pre-commit hooks'
+  autoupdate_schedule: weekly
+  skip: []
+  submodules: false
