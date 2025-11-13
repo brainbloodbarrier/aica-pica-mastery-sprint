@@ -151,3 +151,34 @@ export function calculatePercentage(correct: number, total: number): number {
 export function formatNumber(num: number): string {
   return num.toLocaleString();
 }
+
+
+export function getEncouragementMessage(score: number): string {
+  if (score >= 90) return "Excelente trabalho! Você é um mestre!"
+  if (score >= 80) return "Ótimo desempenho! Continue assim!"
+  if (score >= 70) return "Bom trabalho! Você está progredindo bem."
+  if (score >= 60) return "Continue praticando, você está melhorando!"
+  return "Não desista! A prática leva à perfeição."
+}
+
+
+export function getLevelColor(level: number): string {
+  if (level >= 7) return "from-purple-500 to-purple-700"
+  if (level >= 5) return "from-blue-500 to-blue-700"
+  if (level >= 3) return "from-green-500 to-green-700"
+  return "from-gray-500 to-gray-700"
+}
+
+
+export function calculateXPProgress(currentXP: number): {
+  percentage: number
+  currentLevelXP: number
+  nextLevelXP: number
+} {
+  const levelInfo = calculateLevel(currentXP)
+  return {
+    percentage: levelInfo.progress,
+    currentLevelXP: currentXP,
+    nextLevelXP: levelInfo.nextLevelXp
+  }
+}
