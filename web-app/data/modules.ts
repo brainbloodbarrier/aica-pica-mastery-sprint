@@ -1,5 +1,11 @@
 import { Module } from '@/lib/types'
-import { SAMPLE_QUESTIONS } from './questions'
+import {
+  SAMPLE_QUESTIONS,
+  MODULE_2_QUESTIONS,
+  MODULE_3_QUESTIONS,
+  MODULE_4_QUESTIONS,
+  MODULE_5_QUESTIONS
+} from './questions'
 
 export const MODULES: Module[] = [
   {
@@ -18,7 +24,7 @@ export const MODULES: Module[] = [
     title: 'AICA Segments Deep Dive',
     description: 'Análise detalhada dos segmentos da AICA: anterior pontino, lateral pontino, floculopeduncular e cortical',
     topic: 'AICA Anatomy',
-    questions: [],
+    questions: MODULE_2_QUESTIONS,
     passPercentage: 80,
     duration: '90-120 min',
     badge: 'AICA Segments Master',
@@ -31,7 +37,7 @@ export const MODULES: Module[] = [
     title: 'AICA Branches & Clinical',
     description: 'Ramos da AICA e síndrome lateral pontina',
     topic: 'AICA Clinical',
-    questions: [],
+    questions: MODULE_3_QUESTIONS,
     passPercentage: 80,
     duration: '60-90 min',
     badge: 'AICA Branches Master',
@@ -44,7 +50,7 @@ export const MODULES: Module[] = [
     title: 'PICA Segments Deep Dive',
     description: 'Análise detalhada dos 5 segmentos da PICA',
     topic: 'PICA Anatomy',
-    questions: [],
+    questions: MODULE_4_QUESTIONS,
     passPercentage: 80,
     duration: '90-120 min',
     badge: 'PICA Segments Master',
@@ -57,7 +63,7 @@ export const MODULES: Module[] = [
     title: 'PICA Branches & Wallenberg',
     description: 'Ramos da PICA e síndrome de Wallenberg',
     topic: 'PICA Clinical',
-    questions: [],
+    questions: MODULE_5_QUESTIONS,
     passPercentage: 80,
     duration: '60-90 min',
     badge: 'PICA Master',
